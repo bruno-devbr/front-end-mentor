@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+:root {
+    --font1: 'Hanken Grotesk', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    max-width: 1440px;
+    position: relative;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+main {
+    max-width: 720px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.118);
+}
+
+.esquerda {
+    width: 50%;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.inicio h3 {
+    padding: 30px;
+    color: hsl(221, 100%, 96%);
+    font-weight: 400;
+}
+
+.inicio .esfera {
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+}
+
+.inicio .esfera .estxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inicio .esfera .estxt span {
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.inicio .esfera .estxt p {
+    color: hsl(241, 100%, 89%);
+}
+
+.texto {
+    margin: 30px auto;
+}
+
+.texto h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.texto p {
+    width: 235px;
+    margin: 10px auto;
+    color: hsl(221, 100%, 96%);
+}
+
+.direita {
+    width: 50%;
+    padding: 30px;
+}
+
+.direita h3 {
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 10px;
+}
+
+.tabela {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.number {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.bold {
+    color: hsl(224, 30%, 27%);
+    font-weight: bolder;
+}
+
+.gray {
+    color: gray;
+    font-weight: bolder;
+}
+
+.tabela .t1 {
+    padding: 15px;
+    background-color: hsla(0, 100%, 67%, 0.096);
+    color: hsl(0, 100%, 67%);
+    border-radius: 10px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.tabela .t2 {
+    padding: 15px;
+    background-color: hsla(39, 100%, 56%, 0.287);
+    border-radius: 10px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.tabela .t3 {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    background-color: hsla(166, 100%, 37%, 0.232);
+    position: relative;
+}
+
+.tabela .t4 {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    background-color: hsla(234, 85%, 45%, 0.232);
+    position: relative;
+}
+
+button {
+    background-color: hsla(256, 72%, 46%, 1);
+    color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(224, 30%, 27%);
+}
+
+@media only screen and (max-width: 719px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .esquerda {
+        min-width: 375px;
+        width: 100vw;
+        margin: auto;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .direita {
+        margin: auto;
+        min-width: 375px;
+        width: 100vw;
+    }
+
+    button {
+        min-width: 375px;
+        width: 100vw;
+    }
+}
