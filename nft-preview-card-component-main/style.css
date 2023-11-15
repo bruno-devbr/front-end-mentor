@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-VariableFont_wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    min-height: 667px;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 667px;
+    min-width: 375px;
+}
+
+.caixa {
+    height: 560px;
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.img {
+    width: 100%;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.img img {
+    border-radius: 20px;
+    width: 300px;
+    z-index: 1;
+}
+
+.img .cor {
+    display: none;
+    z-index: 2;
+    
+}
+
+.cor img {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    background-color: hsla(178, 100%, 50%, 0.455);
+    padding: 127px;
+    border-radius: 20px;
+}
+
+
+.img:hover .cor {
+    display: flex;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+p.text {
+    color: hsl(178, 100%, 50%);
+    position: relative;
+    font-weight: 700;
+    margin-left: 16px;
+    margin-bottom: 30px;
+}
+
+p.text span {
+    color: hsl(215, 51%, 70%);
+    position: absolute;
+    right: 0px;
+}
+
+.um {
+    position: absolute;
+    left: -15px;
+    top: 3px;
+}
+
+.dois {
+    right: 86px;
+    position: absolute;
+    top: 3px;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+p.image {
+    position: relative;
+    margin-left: 44px;
+}
+
+p.image span {
+    color: hsl(0, 0%, 100%);
+}
+
+p.image span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.tres {
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: -41px;
+}
