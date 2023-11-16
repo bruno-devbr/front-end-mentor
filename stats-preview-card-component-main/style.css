@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.caixa {
+    background-color: hsl(244, 38%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 1080px;
+    height: 446px;
+}
+
+.esquerda {
+    width: 50%;
+    padding: 65px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 90px;
+}
+
+.num {
+    display: flex;
+}
+
+.um h1, .dois h1, .tres h1{
+    margin: 0;
+    
+}
+
+.dois, .tres {
+    margin-left: 64px;
+}
+
+.um span, .dois span, .tres span {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.direita {
+    width: 50%;
+    position: relative;
+}
+
+.direita .cor {
+    z-index: 1;
+    background-color: hsla(277, 64%, 50%, 0.389);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.direita img.imgum {
+    z-index: 2;
+}
+
+.direita img.imgdois {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    main {
+        min-width: 375px;
+    }
+    
+    .caixa {
+        width: 315px;
+        flex-direction: column-reverse;
+        height: 752px;
+        text-align: center;
+    }
+
+    .esquerda {
+        width: 255px;
+        padding: 30px;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    .num {
+        flex-direction: column;
+    }
+
+    .dois, .tres {
+        margin-left: 0;
+    }
+
+    .dois, .tres {
+        margin-top: 15px;
+    }
+    
+    .direita {
+        width: 315px;
+        height: 240px;
+        background-image: url('images/image-header-mobile.jpg');
+        background-size: cover;
+    }
+
+    .imgum {
+        display: none;
+    }
+
+    .imgdois {
+        width: 315px;
+    }
+}
