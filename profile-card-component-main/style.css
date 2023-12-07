@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+}
+
+main {
+    width: 350px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+#phot {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#foto {
+    position: absolute;
+    top: 22%;
+    left: 117px;
+    border-radius: 50%;
+    border: solid white 10px;
+}
+
+.victor {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    color: hsl(229, 23%, 23%);
+}
+
+span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+p {
+    color: hsl(227, 10%, 46%);
+    font-size: 18px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.followers, .likes, .photos {
+    text-align: center;
+}
