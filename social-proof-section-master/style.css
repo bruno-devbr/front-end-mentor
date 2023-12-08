@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('fonts/LeagueSpartan-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: 'LeagueSpartan';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.inicio {
+    display: flex;
+    position: relative;
+}
+
+.inicio h1 {
+    color: hsl(300, 43%, 22%);
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+.inicio p {
+    color: hsl(303, 10%, 53%);
+    width: 370px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.ratings {
+    position: absolute;
+    right: 0;
+}
+
+.stars {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.reviews, .guru, .besttech {
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.reviews {
+    position: absolute;
+    right: 60px;
+    width: 330px;
+}
+
+.reviews span {
+    margin-left: 30px;
+}
+
+.guru {
+    position: absolute;
+    right: 30px;
+    top: 68px;
+    width: 330px;
+}
+
+.guru span {
+    margin-left: 30px;
+}
+
+.besttech {
+    position: absolute;
+    right: 0;
+    top: 136px;
+    width: 330px;
+}
+
+.besttech span {
+    margin-left: 30px;
+}
+
+.pessoas {
+    display: flex;
+}
+
+.colton {
+    font-size: 15px;
+    background-color: hsl(300, 43%, 22%);
+    width: 260px;
+    height: 102px;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+
+.colton img {
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.colton h2 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.colton span {
+    color: hsl(333, 80%, 67%);
+    margin-bottom: 20px;
+}
+
+.irene {
+    font-size: 15px;
+    background-color: hsl(300, 43%, 22%);
+    width: 255px;
+    height: 102px;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.irene img {
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.irene h2 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.irene span {
+    color: hsl(333, 80%, 67%);
+    margin-bottom: 20px;
+}
+
+.anne {
+    font-size: 15px;
+    background-color: hsl(300, 43%, 22%);
+    height: 102px;
+    width: 255px;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.anne img {
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.anne h2 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.anne span {
+    color: hsl(333, 80%, 67%);
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        padding: 10px;
+        transform: translate(-50%, -0%);
+        top: 0;
+        left: 50%;
+    }
+
+    .palavras {
+        width: 280px;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+    .palavras p {
+        width: 280px;
+    }
+
+
+    .ratings {
+        top: 194px;
+        margin: auto;
+    }
+
+    .reviews, .guru, .besttech {
+        width: 220px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 5px;
+    }
+
+    .reviews {
+        right: 40px;
+    }
+
+    .reviews span {
+        margin-left: 0;
+    }
+
+    .guru {
+        top: 82px;
+        right: 40px;
+    }
+
+    .guru span {
+        margin-left: 0;
+    }
+
+    .besttech {
+        top: 164px;
+        right: 40px;
+    }
+    
+    .besttech span {
+        margin-left: 0;
+    }
+
+    .pessoas {
+        flex-direction: column;
+        margin-top: 280px;
+    }
+
+    .colton {
+        margin-right: 30px;
+    }
+
+    .irene {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .anne {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+}
